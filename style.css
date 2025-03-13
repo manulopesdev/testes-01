@@ -1,0 +1,125 @@
+
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #f9e6ff;
+    margin: 0;
+    padding: 0;
+    background-image: url(img/bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    padding: 0;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #6a0dad;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 30px;
+}
+
+header nav ul li a.active {
+    background-color: #6a0dad;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px 0 10px;
+    margin: 0;
+}
+
+header nav ul li a img {
+    max-width: 50px;
+    display: inline;
+
+}
+
+.container {
+    max-width: 600px;
+    margin: 120px 120px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 0 10px rgb(202, 155, 214);
+}
+
+h2 {
+    text-align: center;
+    color: #6a0dad;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: #6a0dad;
+    font-size: small;
+}
+
+
+.row {
+    display: flex;
+    gap: 10px; 
+}
+
+.col {
+    flex: 1; 
+    max-width: calc(33.33% - 9px);
+}
+
+input:focus{
+    border-color: #6a0dad;
+}
+
+input[type="text"], input[type="number"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    box-sizing: border-box; 
+}
+
+button {
+    display: inline-block;
+    width: 40%;
+    padding: 10px;
+    margin-top: 20px;
+    margin: 20px 20px 0 30px;
+    background-color: #6a0dad;
+    color: #fff;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+}
+
+button[type="button"] {
+    background-color: #ccc;
+    color: #333;
+    
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #6a0dad;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
