@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheirinho da Vovó - Cadastro de Novo Produto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#" class="active"><img src="img/logo.png" alt="">Cheirinho da Vovó</a></li>
+                <li><a href="#">Sobre Nós</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>Cadastro de novo produto</h2>
+            <form id="candleForm">
+                <label for="name">Nome</label>
+                <input type="text" id="name" placeholder="ex: Vela Aromática Cheirinho da Vovó" required>
+
+                <label for="fragrance">Fragrância</label>
+                <input type="text" id="fragrance" placeholder="ex: Lavanda" required>
+
+                <div class="row">
+                    <div class="col">
+                        <label for="weight">Peso (g)</label>
+                        <input type="number" id="weight" step="0.1" placeholder="ex: 120" required>
+                    </div>
+                    <div class="col">
+                        <label for="height">Altura (cm)</label>
+                        <input type="number" id="height" step="0.1" placeholder="ex: 7.5" required>
+                    </div>
+                    <div class="col">
+                        <label for="diameter">Diâmetro (cm)</label>
+                        <input type="number" id="diameter" step="0.1" placeholder="ex: 7" required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <label for="burnTime">Tempo de Queima</label>
+                        <input type="text" id="burnTime" placeholder="ex: Aprox. 16 h" required>
+                    </div>
+                    <div class="col">
+                        <label for="price">Preço (R$)</label>
+                        <input type="number" id="price" step="0.01" placeholder="ex: 15,00" required>
+                    </div>
+                    <div class="col">
+                        <label for="stock">Estoque (qtd)</label>
+                        <input type="number" id="stock" placeholder="ex: 5" required min="1">
+                    </div>
+                </div>
+
+                <label for="description">Descrição</label>
+                <textarea id="description" placeholder="ex: Lorem Ipsum" required></textarea>
+
+                <button type="submit">Salvar</button>
+                <button type="button" onclick="resetForm()">Cancelar</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Cheirinho da Vovó. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        function resetForm() {
+            document.getElementById('candleForm').reset();
+        }
+    </script>
+</body>
+</html>
